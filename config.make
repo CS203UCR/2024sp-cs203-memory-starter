@@ -1,1 +1,2 @@
 C_OPTS=-O4
+join_OPTIMIZE=-O4

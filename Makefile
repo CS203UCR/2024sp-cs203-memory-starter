@@ -18,8 +18,8 @@ include config.make
 
 .PHONY: autograde
 autograde: join.exe 
-	./join.exe -M 3300 -o bench.csv -v -s 2048 -k 127 -i 1 -f join_reference_c join_solution_c
-	./join.exe -M 3300 -o correctness.csv -v -s 1024 2048 -k 31 63 -i 1 -f join_reference_c join_solution_c
+	./join.exe -M 3300 -o bench.csv -v -customers 2048 -products 4096 -brands 64 -i 1 -f join_reference_c join_solution_c
+	./join.exe -M 3300 -o correctness.csv -v -customers 2048 -products 4096 -brands 64  -i 1 -f join_reference_c join_solution_c
 
 .PRECIOUS: $(BUILD)%.cpp
 .PRECIOUS: $(BUILD)%.hpp
