@@ -223,8 +223,8 @@ int main(int argc, char *argv[])
                         std::cerr << "Done execution: " << function << "\n";
                         free(results);
                     }
-                    free(orders);
-                    free(products);
+                    //free(orders);
+                    //free(products);
                 }
             }
         }
